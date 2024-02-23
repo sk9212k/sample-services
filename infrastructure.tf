@@ -8,7 +8,7 @@ terraform {
   }
 
   backend "azurerm" {
-    resource_group_name  = "Terraformgitdemo" 
+    resource_group_name  = "Terraformgitdemo"
     storage_account_name = "terraformtffile"
     container_name       = "tfstatefile"
     key                  = "terraform.tfstate"
