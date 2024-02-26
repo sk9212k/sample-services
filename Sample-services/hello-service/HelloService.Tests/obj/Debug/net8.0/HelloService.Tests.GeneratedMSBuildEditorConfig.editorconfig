@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HelloService.Tests
-build_property.ProjectDir = /home/cl/Desktop/to be deleted/sample-services/Sample-services/hello-service/HelloService.Tests/
+build_property.ProjectDir = /home/sohail/Cloudlem/sample-services/Sample-services/hello-service/HelloService.Tests/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
