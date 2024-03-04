@@ -27,7 +27,7 @@ jobs:
   build-test:
 
     runs-on: ubuntu-latest
-
+    needs: SonarCloudSCan
     steps:
     - uses: actions/checkout@v3
 
