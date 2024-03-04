@@ -16,5 +16,5 @@ jobs:
         with:
           args: >
               -Dsonar.organization=sk9212k
-              -Dsonar.projectKey=sk9212k_sample-services          // name of your repository 
+              -Dsonar.projectKey=sk9212k_sample-services         
               -Dsonar.python.coverage.reportPaths=coverage.xml
