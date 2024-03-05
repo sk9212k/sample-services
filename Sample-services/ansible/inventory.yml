@@ -1,0 +1,2 @@
+[iis_servers]
+172.206.249.128 ansible_user=zb ansible_password=Zirconblue123 ansible_connection=winrm ansible_winrm_transport=ssl 

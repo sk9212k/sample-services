@@ -1,0 +1,17 @@
+---
+  - name: Deploy IIS on azure vm
+    hosts: all
+    vars:
+     azure_client_id: b59f4f3a-9a30-454b-910b-d411245abdc0
+     azure_secret: d76f1111-f118-48fc-8cf9-104e977f9f00
+     azure_tenant: e316acc5-71c6-471e-ba1d-591dd32d8e91
+     azure_subscription_id: 94f13d3b-16c1-4074-89a3-1114bced9035
+     resource_group: test1
+    tasks:
+    - name: Install IIS
+      win_feature:
+        name: Web-Server
+        state: present
+    
+    - name: Restart IIS
+      win_shell: iisreset
