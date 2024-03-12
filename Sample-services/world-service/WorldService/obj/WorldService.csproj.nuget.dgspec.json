@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/cl/Desktop/to be deleted/sample-services/Sample-services/world-service/WorldService/WorldService.csproj": {}
+    "C:\\Users\\Sohail\\sample-services\\Sample-services\\world-service\\WorldService\\WorldService.csproj": {}
   },
   "projects": {
-    "/home/cl/Desktop/to be deleted/sample-services/Sample-services/world-service/WorldService/WorldService.csproj": {
+    "C:\\Users\\Sohail\\sample-services\\Sample-services\\world-service\\WorldService\\WorldService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cl/Desktop/to be deleted/sample-services/Sample-services/world-service/WorldService/WorldService.csproj",
+        "projectUniqueName": "C:\\Users\\Sohail\\sample-services\\Sample-services\\world-service\\WorldService\\WorldService.csproj",
         "projectName": "WorldService",
-        "projectPath": "/home/cl/Desktop/to be deleted/sample-services/Sample-services/world-service/WorldService/WorldService.csproj",
-        "packagesPath": "/home/cl/.nuget/packages/",
-        "outputPath": "/home/cl/Desktop/to be deleted/sample-services/Sample-services/world-service/WorldService/obj/",
+        "projectPath": "C:\\Users\\Sohail\\sample-services\\Sample-services\\world-service\\WorldService\\WorldService.csproj",
+        "packagesPath": "C:\\Users\\Sohail\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sohail\\sample-services\\Sample-services\\world-service\\WorldService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/cl/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Sohail\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -68,11 +70,15 @@
               "version": "[7.0.15, 7.0.15]"
             },
             {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "name": "Microsoft.NETCore.App.Host.win-x64",
               "version": "[7.0.15, 7.0.15]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.15, 7.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
               "version": "[7.0.15, 7.0.15]"
             }
           ],
@@ -84,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

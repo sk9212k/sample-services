@@ -66,3 +66,38 @@
 /home/cl/Desktop/to be deleted/sample-services/Sample-services/world-service/WorldService/obj/Debug/net7.0/WorldService.pdb
 /home/cl/Desktop/to be deleted/sample-services/Sample-services/world-service/WorldService/obj/Debug/net7.0/WorldService.genruntimeconfig.cache
 /home/cl/Desktop/to be deleted/sample-services/Sample-services/world-service/WorldService/obj/Debug/net7.0/ref/WorldService.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net7.0\appsettings.Development.json
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net7.0\appsettings.json
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net7.0\swagger.json
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net7.0\WorldService.exe
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net7.0\WorldService.deps.json
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net7.0\WorldService.runtimeconfig.json
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net7.0\WorldService.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net7.0\WorldService.pdb
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net7.0\Microsoft.OpenApi.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\WorldService.csproj.AssemblyReference.cache
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\WorldService.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\WorldService.AssemblyInfoInputs.cache
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\WorldService.AssemblyInfo.cs
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\WorldService.csproj.CoreCompileInputs.cache
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\WorldService.MvcApplicationPartsAssemblyInfo.cs
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\WorldService.MvcApplicationPartsAssemblyInfo.cache
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\WorldService.sourcelink.json
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\staticwebassets.build.json
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\staticwebassets.development.json
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\staticwebassets\msbuild.WorldService.Microsoft.AspNetCore.StaticWebAssets.props
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\staticwebassets\msbuild.build.WorldService.props
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.WorldService.props
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.WorldService.props
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\staticwebassets.pack.json
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\scopedcss\bundle\WorldService.styles.css
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\WorldService.csproj.CopyComplete
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\WorldService.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\refint\WorldService.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\WorldService.pdb
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\WorldService.genruntimeconfig.cache
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net7.0\ref\WorldService.dll

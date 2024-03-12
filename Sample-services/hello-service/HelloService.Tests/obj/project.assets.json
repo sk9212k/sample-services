@@ -1464,32 +1464,34 @@
     ]
   },
   "packageFolders": {
-    "/home/cl/.nuget/packages/": {}
+    "C:\\Users\\Sohail\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/cl/Desktop/to be deleted/sample-services/Sample-services/hello-service/HelloService.Tests/HelloService.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Sohail\\sample-services\\Sample-services\\hello-service\\HelloService.Tests\\HelloService.Tests.csproj",
       "projectName": "HelloService.Tests",
-      "projectPath": "/home/cl/Desktop/to be deleted/sample-services/Sample-services/hello-service/HelloService.Tests/HelloService.Tests.csproj",
-      "packagesPath": "/home/cl/.nuget/packages/",
-      "outputPath": "/home/cl/Desktop/to be deleted/sample-services/Sample-services/hello-service/HelloService.Tests/obj/",
+      "projectPath": "C:\\Users\\Sohail\\sample-services\\Sample-services\\hello-service\\HelloService.Tests\\HelloService.Tests.csproj",
+      "packagesPath": "C:\\Users\\Sohail\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sohail\\sample-services\\Sample-services\\hello-service\\HelloService.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/cl/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Sohail\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/cl/Desktop/to be deleted/sample-services/Sample-services/hello-service/HelloService/HelloService.csproj": {
-              "projectPath": "/home/cl/Desktop/to be deleted/sample-services/Sample-services/hello-service/HelloService/HelloService.csproj"
+            "C:\\Users\\Sohail\\sample-services\\Sample-services\\hello-service\\HelloService\\HelloService.csproj": {
+              "projectPath": "C:\\Users\\Sohail\\sample-services\\Sample-services\\hello-service\\HelloService\\HelloService.csproj"
             }
           }
         }
@@ -1541,7 +1543,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

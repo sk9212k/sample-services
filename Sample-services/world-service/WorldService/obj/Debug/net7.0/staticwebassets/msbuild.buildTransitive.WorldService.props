@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../buildMultiTargeting/WorldService.props" />
+  <Import Project="..\buildMultiTargeting\WorldService.props" />
 </Project>
