@@ -202,38 +202,38 @@ jobs:
 
 #######################From here job 5 starts#####################################
 
-Pushingimages-HelloService:
-  runs-on: ubuntu-22.04
-  needs: Unittest-HelloService
-  steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Login to Azure Container Registry
-      run: az login --service-principal -u ${{ secrets.AZURE_CLIENT_ID }} -p ${{ secrets.AZURE_CLIENT_SECRET }} --tenant ${{ secrets.AZURE_TENANT_ID }}
-    - name: Docker build and push
-      run: |
-        cd Sample-services/hello-service/HelloService
-        docker build . -t hello-service
-        docker tag hello-service:latest zirconblue.azurecr.io/hello-service:latest
-        docker push zirconblue.azurecr.io/hello-service:latest
+  Pushingimages-HelloService:
+    runs-on: ubuntu-22.04
+    needs: Unittest-HelloService
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Login to Azure Container Registry
+        run: az login --service-principal -u ${{ secrets.AZURE_CLIENT_ID }} -p ${{ secrets.AZURE_CLIENT_SECRET }} --tenant ${{ secrets.AZURE_TENANT_ID }}
+      - name: Docker build and push
+        run: |
+          cd Sample-services/hello-service/HelloService
+          docker build . -t hello-service
+          docker tag hello-service:latest zirconblue.azurecr.io/hello-service:latest
+          docker push zirconblue.azurecr.io/hello-service:latest
 
 
    
 ################Job 6 starts from here#############
 
-Pushingimages-WorldService:
-  runs-on: ubuntu-22.04
-  needs: Unittest-WorldService
-  steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Login to Azure Container Registry
-      run: az login --service-principal -u ${{ secrets.AZURE_AD_CLIENT_ID }} -p ${{ secrets.AZURE_AD_CLIENT_SECRET }} --tenant ${{ secrets.AZURE_AD_TENANT_ID }}
-    - name: Docker build and push
-      run: |
-        cd Sample-services/world-service/WorldService
-        docker build . -t world-service
-        docker tag world-service:latest zirconblue.azurecr.io/world-service:latest
+  Pushingimages-WorldService:
+    runs-on: ubuntu-22.04
+    needs: Unittest-WorldService
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Login to Azure Container Registry
+        run: az login --service-principal -u ${{ secrets.AZURE_AD_CLIENT_ID }} -p ${{ secrets.AZURE_AD_CLIENT_SECRET }} --tenant ${{ secrets.AZURE_AD_TENANT_ID }}
+      - name: Docker build and push
+        run: |
+          cd Sample-services/world-service/WorldService
+          docker build . -t world-service
+          docker tag world-service:latest zirconblue.azurecr.io/world-service:latest
 
 
  
