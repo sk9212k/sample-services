@@ -237,4 +237,4 @@ jobs:
             cd Sample-services/world-service/WorldService
             docker build . -t world-service
             docker tag world-service:latest zirconblue.azurecr.io/world-service:latest
-
+            docker push zirconblue.azurecr.io/world-service:latest
