@@ -255,7 +255,6 @@ jobs:
 
         - name: Navigate to Deployment-definitions
           run: cd ./Deployment-definitions && pwd && ls
-      
         - name: Navigate to Deployment-definitions
           run: |
             pwd && ls
