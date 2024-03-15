@@ -242,9 +242,9 @@ jobs:
 #############################Job 7 starts from here#####################################################
 
   Navigate_to_Deployment_definitions_and_deploy:
-      runs-on: ubuntu-22.04
-      needs: [Pushingimages-HelloService, Pushingimages-WorldService]
-      steps:
+     runs-on: ubuntu-22.04
+     needs: [Pushingimages-HelloService, Pushingimages-WorldService]
+     steps:
         - name: Checkout repository
           uses: actions/checkout@v2
 
@@ -255,6 +255,7 @@ jobs:
 
         - name: Navigate to Deployment-definitions
           run: cd ./Deployment-definitions && pwd && ls
+
         - name: Navigate to Deployment-definitions
           run: |
             pwd && ls
