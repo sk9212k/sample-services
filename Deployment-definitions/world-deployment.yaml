@@ -16,7 +16,7 @@ spec:
         - name: world-service
           image: zirconblue.azurecr.io/world-service:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 5039
 
 ---
 apiVersion: v1
@@ -28,6 +28,9 @@ spec:
     app: world-service
   ports:
     - protocol: TCP
-      port: 8080
-      targetPort: 8080
+      port: 5039
+      targetPort: 5039
   type: LoadBalancer
+
+
+  #
