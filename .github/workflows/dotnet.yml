@@ -240,6 +240,7 @@
 #             docker push zirconblue.azurecr.io/world-service:latest
 
 #############################Job 7 starts from here#####################################################
+  name: CI-PIPELINE
 
   on:
   push:
