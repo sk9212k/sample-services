@@ -241,6 +241,13 @@
 
 #############################Job 7 starts from here#####################################################
 
+  on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  
+  
   Navigate_to_Deployment_definitions_and_deploy:
     runs-on: ubuntu-latest
     needs: [Pushingimages-HelloService,Pushingimages-WorldService]
