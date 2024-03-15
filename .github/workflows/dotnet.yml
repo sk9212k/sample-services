@@ -242,52 +242,52 @@ jobs:
 #############################Job 7 starts from here#####################################################
 
   Navigate_to_Deployment_definitions_and_deploy:
-     runs-on: ubuntu-22.04
-     needs: [Pushingimages-HelloService, Pushingimages-WorldService]
-     steps:
-        - name: Checkout repository
-          uses: actions/checkout@v2
+    runs-on: ubuntu-latest
+    needs: [Pushingimages-HelloService,Pushingimages-WorldService]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-        - name: Log in with Azure
-          uses: azure/login@v1
-          with:
-            creds: '${{ secrets.AZURE_CREDENTIALS }}'
+      - name: Log in with Azure
+        uses: azure/login@v1
+        with:
+          creds: '${{ secrets.AZURE_CREDENTIALS }}'
 
-        - name: Navigate to Deployment-definitions
-          run: cd ./Deployment-definitions && pwd && ls
+      - name: Navigate to Deployment-definitions
+        run: cd ./Deployment-definitions && pwd && ls
 
-        - name: Navigate to Deployment-definitions
-          run: |
-            pwd && ls
-            cd ./Deployment-definitions && pwd && ls
-            az aks get-credentials --resource-group test1 --name debugdemocluster
-            kubectl get nodes
-            az acr list --resource-group test1 --query "[].{acrLoginServer:loginServer}" --output table
-
-          # Define feature toggle flags for hello and world services
-            HELLO_TOGGLE="off"
-            WORLD_TOGGLE="on"
-
-        # Check if the feature toggle for hello service is on
-            if [[ "${HELLO_TOGGLE}" == "on" ]]; then
-              kubectl apply -f hello-deployment.yaml
-            else
-              echo "Hello service feature toggle is turned off, skipping deployment."
-            fi
+      - name: Navigate to Deployment-definitions
+        run: |
+          pwd && ls
+          cd ./Deployment-definitions && pwd && ls
+          az aks get-credentials --resource-group test1 --name debugdemocluster
+          kubectl get nodes
+          az acr list --resource-group test1 --query "[].{acrLoginServer:loginServer}" --output table
           
-        # Check if the feature toggle for world service is on
-            if [[ "${WORLD_TOGGLE}" == "on" ]]; then
-              kubectl apply -f world-deployment.yaml
-            else
-              echo "World service feature toggle is turned off, skipping deployment."
-            fi
+          # Define feature toggle flags for hello and world services
+          HELLO_TOGGLE="off"
+          WORLD_TOGGLE="on"
 
-        - name: Sleep for a bit
-          uses: jakejarvis/wait-action@master
-          with:
-            time: "30s"
+          # Check if the feature toggle for hello service is on
+          if [[ "${HELLO_TOGGLE}" == "on" ]]; then
+            kubectl apply -f hello-deployment.yaml
+          else
+            echo "Hello service feature toggle is turned off, skipping deployment."
+          fi
+          
+          # Check if the feature toggle for world service is on
+          if [[ "${WORLD_TOGGLE}" == "on" ]]; then
+            kubectl apply -f world-deployment.yaml
+          else
+            echo "World service feature toggle is turned off, skipping deployment."
+          fi
 
-        - name: Navigate to Deployment-definitions
-          run: |
-            kubectl get events
-            kubectl get services
+      - name: Sleep for a bit
+        uses: jakejarvis/wait-action@master
+        with:
+          time: "30s"
+
+      - name: Navigate to Deployment-definitions
+        run: |
+          kubectl get events
+          kubectl get services
