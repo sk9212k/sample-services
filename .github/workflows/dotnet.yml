@@ -239,7 +239,7 @@ jobs:
             docker tag world-service:latest zirconblue.azurecr.io/world-service:latest
             docker push zirconblue.azurecr.io/world-service:latest
 
-#############################Job 7 starts from here#####################################################
+#############################Job 7 starts from here##########################################################
 
   Navigate_to_Deployment_definitions_and_deploy:
     runs-on: ubuntu-latest
