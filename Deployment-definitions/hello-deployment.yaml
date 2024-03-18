@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: new-service
-          image: zirconblue.azurecr.io/hello-service:latest
+          image: debugdemoimage.azurecr.io/hello-service:latest
           ports:
             - containerPort: 80
 

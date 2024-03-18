@@ -260,9 +260,9 @@ jobs:
         run: |
           pwd && ls
           cd ./Deployment-definitions && pwd && ls
-          az aks get-credentials --resource-group test1 --name debugdemocluster
+          az aks get-credentials --resource-group azure-test --name debugdemocluster
           kubectl get nodes
-          az acr list --resource-group test1 --query "[].{acrLoginServer:loginServer}" --output table
+          az acr list --resource-group azure-test --query "[].{acrLoginServer:loginServer}" --output table
           
           # Define feature toggle flags for hello and world services
           HELLO_TOGGLE="on"
