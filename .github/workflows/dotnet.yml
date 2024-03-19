@@ -1,11 +1,9 @@
-name: CICD-PIPELINE
-
+name: CI-PIPELINE
 on:
   push:
-     branches: [ "master" ]
+    branches: [ "master" ]
   pull_request:
-     branches: [ "master" ]
-
+    branches: [ "master" ]
 jobs:
   SonarCloudSCan:
     runs-on: ubuntu-latest
@@ -21,80 +19,62 @@ jobs:
         with:
           args: >
               -Dsonar.organization=sk9212k
-              -Dsonar.projectKey=sample-services
+              -Dsonar.projectKey=sk9212k_sample-services
               -Dsonar.python.coverage.reportPaths=coverage.xml
-
-##################################### ##############################3
-  
   build-test:
-
     runs-on: ubuntu-latest
-    needs: SonarCloudSCan 
+    needs: SonarCloudSCan
     steps:
     - uses: actions/checkout@v3
-
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 7.0.x
-
     - name: Build and Test HelloService
       run: |
         cd Sample-services/hello-service/HelloService
         dotnet restore
         dotnet build --no-restore
         dotnet test --no-build --verbosity normal
-
     - name: Build and Test WorldService
       run: |
         cd Sample-services/world-service/WorldService
         dotnet restore
         dotnet build --no-restore
         dotnet test --no-build --verbosity normal
-
-       # --------------------------------  from here job two starts------------------------------------------------
-
+       # --------------------------------  from here job two starts-------------------------------------------------
   zap_test:
     runs-on: ubuntu-22.04
     needs: build-test
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        
       # - name: Set up Docker
       #   uses: papodaca/install-docker-action@v1
-        
       - name: Setup Python 3.10.12
         uses: actions/setup-python@v2
         with:
           python-version: 3.10.12
-      
       # - name: Install Docker
       #   uses: papodaca/install-docker-action@v1
-          
       - name: Install Docker Compose
         run: |
           sudo apt-get update
           sudo apt-get install -y docker-compose
-
       # - name: Install Java 18.0.2-ea
       #   run: |
       #     sudo apt-get install -y openjdk-18-jdk
       #     java -version
-
       - name: Install Python dependencies
         run: |
           python3 -m pip install --upgrade pip
           pip install requests python-owasp-zap-v2.4
-
       - name: Get working directory
         run: pwd
-
       - name: Run Docker Compose up
         run: |
           docker-compose -f ./docker-compose.yml up -d
           echo "------ Docker Compose up done -----"
-
       - name: Install OWASP ZAP
         run: |
           mkdir -p ./zap
@@ -116,70 +96,56 @@ jobs:
           chmod +x stop-zap
           echo $pwd
           echo "ZAP installed"
-
       - name: Run ZAP Daemon
         run: ./zap/ZAP_2.14.0/zap.sh -daemon -host 0.0.0.0 -port 8090 -config api.addrs.addr.name=".*" -config api.addrs.addr.regex=true -config api.disablekey=true > /dev/null &
-
       - name: Sleep for a bit
         uses: jakejarvis/wait-action@master
         with:
-          time: "40s"
-
+          time: "30s"
       - name: Run Test Automation with ZAP (for hello)
         run: |
           cd ./Sample-services
           python3 -m pip install selenium
           python3 zap-testing.py
           echo "---------- ZAP TESTING for hello done ------------------"
-         
-
       - name: Stop ZAP Daemon
         run: |
           pkill -f zap
-          
       - name: Run ZAP Daemon
         run: ./zap/ZAP_2.14.0/zap.sh -daemon -host 0.0.0.0 -port 8090 -config api.addrs.addr.name=".*" -config api.addrs.addr.regex=true -config api.disablekey=true > /dev/null &
-
       - name: Sleep for a bit
         uses: jakejarvis/wait-action@master
         with:
-          time: "40s"
-          
-      - name: Run Test Automation with ZAp (for world) 
+          time: "30s"
+      - name: Run Test Automation with ZAp (for world)
         run: |
            cd ./Sample-services
            python3 -m pip install selenium
            python3 zap-testing-world.py
            echo "------------- ZAP TESTING for world done --------------"
-  
       - name: "Upload Report of hello service"
         uses: actions/upload-artifact@v1
         with:
           name: zap-scan-report
           path: ./Sample-services/zap-alerts.txt
-
       - name: "Upload Report of world service"
         uses: actions/upload-artifact@v1
         with:
           name: zap-scan-report
-          path: ./Sample-services/zap-alerts-world.txt         
-       
-############### From here job 3 starts ##############
+          path: ./Sample-services/zap-alerts-world.txt
+############### From here job 3 starts ###############
   Unittest-HelloService:
     runs-on: ubuntu-22.04
     needs: zap_test
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: '8.0.x'
-
       - name: Restore dependencies
         run: dotnet restore ./Sample-services/hello-service/HelloService.Tests
-
       - name: Run tests
         run: dotnet test ./Sample-services/hello-service/HelloService.Tests
  ################################# Form here job 4 starts ########################
@@ -189,104 +155,91 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-    
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: '8.0.x'  # Change this to the desired .NET SDK version
-
       - name: Restore dependencies
         run: dotnet restore ./Sample-services/world-service/WorldService.Tests
-
       - name: Run tests
         run: dotnet test ./Sample-services/world-service/WorldService.Tests
-###################################### From here job 5 starts ###################### 
+#######################From here job 5 starts#####################################
   Pushingimages-HelloService:
-   runs-on: ubuntu-22.04
-   needs: Unittest-HelloService
-   steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: az login
-        uses: azure/docker-login@v1
-        with:
-          login-server: debugdemoimage.azurecr.io
-          username: ${{ secrets.REGISTRY_USERNAME }}
-          password: ${{ secrets.REGISTRY_PASSWORD }}
-      - name: Docker build and push
-        run: |
-          cd Sample-services/hello-service/HelloService
-          docker build . -t hello-service
-          docker tag hello-service:latest debugdemoimage.azurecr.io/hello-service:latest
-          docker push debugdemoimage.azurecr.io/hello-service:latest
-
-############################################ From here job 6 starts #######################
+     runs-on: ubuntu-22.04
+     needs: Unittest-HelloService
+     steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
+        - name: az login
+          uses: azure/docker-login@v1
+          with:
+            login-server: debugdemoimage.azurecr.io
+            username: ${{ secrets.REGISTRY_USERNAME }}
+            password: ${{ secrets.REGISTRY_PASSWORD }}
+        - name: Docker build and push
+          run: |
+            cd Sample-services/hello-service/HelloService
+            docker build . -t hello-service
+            docker tag hello-service:latest debugdemoimage.azurecr.io/hello-service:latest
+            docker push debugdemoimage.azurecr.io/hello-service:latest
+######################### From here job 6 starts #######################
   Pushingimages-WorldService:
-   runs-on: ubuntu-22.04
-   needs: Unittest-WorldService
-   steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: az login
-        uses: azure/docker-login@v1
-        with:
-          login-server: debugdemoimage.azurecr.io
-          username: ${{ secrets.REGISTRY_USERNAME }}
-          password: ${{ secrets.REGISTRY_PASSWORD }}
-      - name: Docker build and push
-        run: |
-          cd Sample-services/world-service/WorldService
-          docker build . -t world-service
-          docker tag world-service:latest debugdemoimage.azurecr.io/world-service:latest
-          docker push debugdemoimage.azurecr.io/world-service:latest
-
-################################################## From here job 7 starts ######################################
+     runs-on: ubuntu-22.04
+     needs: Unittest-WorldService
+     steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
+        - name: az login
+          uses: azure/docker-login@v1
+          with:
+            login-server: debugdemoimage.azurecr.io
+            username: ${{ secrets.REGISTRY_USERNAME }}
+            password: ${{ secrets.REGISTRY_PASSWORD }}
+        - name: Docker build and push
+          run: |
+            cd Sample-services/world-service/WorldService
+            docker build . -t world-service
+            docker tag world-service:latest debugdemoimage.azurecr.io/world-service:latest
+            docker push debugdemoimage.azurecr.io/world-service:latest
+#############################Job 7 starts from here##########################################################
   Navigate_to_Deployment_definitions_and_deploy:
     runs-on: ubuntu-latest
     needs: [Pushingimages-HelloService,Pushingimages-WorldService]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
       - name: Log in with Azure
         uses: azure/login@v1
         with:
           creds: '${{ secrets.AZURE_CREDENTIALS }}'
-
       - name: Navigate to Deployment-definitions
         run: cd ./Deployment-definitions && pwd && ls
-
       - name: Navigate to Deployment-definitions
         run: |
           pwd && ls
           cd ./Deployment-definitions && pwd && ls
-          az aks get-credentials --resource-group debug-demo --name debugdemocluster
+          az aks get-credentials --resource-group azure-test --name debugdemocluster
           kubectl get nodes
-          az acr list --resource-group debug-demo --query "[].{acrLoginServer:loginServer}" --output table
-          
+          az acr list --resource-group azure-test --query "[].{acrLoginServer:loginServer}" --output table
           # Define feature toggle flags for hello and world services
-          HELLO_TOGGLE="off"
+          HELLO_TOGGLE="on"
           WORLD_TOGGLE="on"
-
           # Check if the feature toggle for hello service is on
           if [[ "${HELLO_TOGGLE}" == "on" ]]; then
             kubectl apply -f hello-deployment.yaml
           else
             echo "Hello service feature toggle is turned off, skipping deployment."
           fi
-          
           # Check if the feature toggle for world service is on
           if [[ "${WORLD_TOGGLE}" == "on" ]]; then
             kubectl apply -f world-deployment.yaml
           else
             echo "World service feature toggle is turned off, skipping deployment."
           fi
-
       - name: Sleep for a bit
         uses: jakejarvis/wait-action@master
         with:
           time: "30s"
-
       - name: Navigate to Deployment-definitions
         run: |
           kubectl get events
