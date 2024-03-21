@@ -1,3 +1,5 @@
+# -----------------------------------  Job 1: SonarCloud Scan. Performs Sonarcloud scan onthe code base. Analyses the python code coverage------------
+
 name: CI-PIPELINE
 on:
   push:
@@ -42,7 +44,8 @@ jobs:
         dotnet restore
         dotnet build --no-restore
         dotnet test --no-build --verbosity normal
-       # --------------------------------  from here job two starts---------------------------------------------------
+       # -------------------------------- Job 2:  #Builds and tests the HelloService and WorldService.                                                                      
+       #ZAP Security Testing. Performs security testing using OWASP ZAP on both HelloService and WorldService. ---------------------------------------------------
   zap_test:
     runs-on: ubuntu-22.04
     needs: build-test
@@ -133,7 +136,7 @@ jobs:
         with:
           name: zap-scan-report
           path: ./Sample-services/zap-alerts-world.txt
-############### From here job 3 starts ###############
+############### Job 3: Runs unit tests for the HelloService ###############
   Unittest-HelloService:
     runs-on: ubuntu-22.04
     needs: zap_test
@@ -148,7 +151,7 @@ jobs:
         run: dotnet restore ./Sample-services/hello-service/HelloService.Tests
       - name: Run tests
         run: dotnet test ./Sample-services/hello-service/HelloService.Tests
- ################################# Form here job 4 starts ########################
+ ################################# Job 4: Runs unit tests for the WorldService ########################
   Unittest-WorldService:
     runs-on: ubuntu-latest
     needs: zap_test
@@ -163,7 +166,7 @@ jobs:
         run: dotnet restore ./Sample-services/world-service/WorldService.Tests
       - name: Run tests
         run: dotnet test ./Sample-services/world-service/WorldService.Tests
-#######################From here job 5 starts#####################################
+####################### Job 5: Builds Docker image for HelloService and pushes it to Azure Container Registry #####################################
   Pushingimages-HelloService:
      runs-on: ubuntu-22.04
      needs: Unittest-HelloService
@@ -182,7 +185,7 @@ jobs:
             docker build . -t hello-service
             docker tag hello-service:latest deploymentdemo.azurecr.io/hello-service:latest
             docker push deploymentdemo.azurecr.io/hello-service:latest
-######################### From here job 6 starts #######################
+######################### Job 6: Builds Docker image for WorldService and pushes it to Azure Container Registry #######################
   Pushingimages-WorldService:
      runs-on: ubuntu-22.04
      needs: Unittest-WorldService
@@ -201,7 +204,7 @@ jobs:
             docker build . -t world-service
             docker tag world-service:latest deploymentdemo.azurecr.io/world-service:latest
             docker push deploymentdemo.azurecr.io/world-service:latest
-#############################Job 7 starts from here##########################################################
+############################# Job 7: Deployment to production environment - Deploys services to Kubernetes cluster based on feature toggle settings. #########################################################
   Navigate_to_Deployment_definitions_and_deploy:
     runs-on: ubuntu-latest
     needs: [Pushingimages-HelloService,Pushingimages-WorldService]
