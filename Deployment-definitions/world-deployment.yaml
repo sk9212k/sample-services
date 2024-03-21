@@ -14,10 +14,12 @@ spec:
     spec:
       containers:
         - name: world-service
-          image: debugdemoimage1.azurecr.io/world-service:latest
+          image: debugimages.azurecr.io/world-service:latest
           ports:
             - containerPort: 8080
-
+          env:                        # Add this section for environment variables
+            - name: ASPNETCORE_ENVIRONMENT
+              value: Development      # Set the value to "Development"
 ---
 apiVersion: v1
 kind: Service

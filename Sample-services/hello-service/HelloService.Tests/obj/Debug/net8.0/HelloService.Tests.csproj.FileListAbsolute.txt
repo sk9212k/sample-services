@@ -357,3 +357,4 @@ c:\Users\Sohail\sample-services\Sample-services\hello-service\HelloService.Tests
 c:\Users\Sohail\sample-services\Sample-services\hello-service\HelloService.Tests\obj\Debug\net8.0\HelloService.Tests.pdb
 c:\Users\Sohail\sample-services\Sample-services\hello-service\HelloService.Tests\obj\Debug\net8.0\HelloService.Tests.genruntimeconfig.cache
 c:\Users\Sohail\sample-services\Sample-services\hello-service\HelloService.Tests\obj\Debug\net8.0\ref\HelloService.Tests.dll
+c:\Users\Sohail\sample-services\Sample-services\hello-service\HelloService.Tests\obj\Debug\net8.0\HelloService.Tests.sourcelink.json

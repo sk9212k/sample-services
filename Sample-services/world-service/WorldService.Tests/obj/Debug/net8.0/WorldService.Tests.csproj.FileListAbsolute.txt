@@ -540,3 +540,4 @@ c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService.Tests
 c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService.Tests\obj\Debug\net8.0\WorldService.Tests.pdb
 c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService.Tests\obj\Debug\net8.0\WorldService.Tests.genruntimeconfig.cache
 c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService.Tests\obj\Debug\net8.0\ref\WorldService.Tests.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService.Tests\obj\Debug\net8.0\WorldService.Tests.sourcelink.json

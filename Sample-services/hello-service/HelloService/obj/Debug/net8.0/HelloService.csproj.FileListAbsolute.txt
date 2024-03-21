@@ -152,3 +152,4 @@ c:\Users\Sohail\sample-services\Sample-services\hello-service\HelloService\obj\D
 c:\Users\Sohail\sample-services\Sample-services\hello-service\HelloService\obj\Debug\net8.0\HelloService.pdb
 c:\Users\Sohail\sample-services\Sample-services\hello-service\HelloService\obj\Debug\net8.0\HelloService.genruntimeconfig.cache
 c:\Users\Sohail\sample-services\Sample-services\hello-service\HelloService\obj\Debug\net8.0\ref\HelloService.dll
+c:\Users\Sohail\sample-services\Sample-services\hello-service\HelloService\obj\Debug\net8.0\HelloService.sourcelink.json

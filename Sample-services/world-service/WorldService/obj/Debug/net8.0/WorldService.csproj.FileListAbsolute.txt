@@ -112,3 +112,4 @@ c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\D
 c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\WorldService.pdb
 c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\WorldService.genruntimeconfig.cache
 c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\ref\WorldService.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\WorldService.sourcelink.json
