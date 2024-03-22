@@ -1,0 +1,115 @@
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/bin/Debug/net8.0/appsettings.Development.json
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/bin/Debug/net8.0/appsettings.json
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/bin/Debug/net8.0/swagger.json
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/bin/Debug/net8.0/WorldService
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/bin/Debug/net8.0/WorldService.deps.json
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/bin/Debug/net8.0/WorldService.runtimeconfig.json
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/bin/Debug/net8.0/WorldService.dll
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/bin/Debug/net8.0/WorldService.pdb
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.csproj.AssemblyReference.cache
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.GeneratedMSBuildEditorConfig.editorconfig
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.AssemblyInfoInputs.cache
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.AssemblyInfo.cs
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.csproj.CoreCompileInputs.cache
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.MvcApplicationPartsAssemblyInfo.cs
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.MvcApplicationPartsAssemblyInfo.cache
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/staticwebassets.build.json
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/staticwebassets.development.json
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/staticwebassets/msbuild.WorldService.Microsoft.AspNetCore.StaticWebAssets.props
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/staticwebassets/msbuild.build.WorldService.props
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.WorldService.props
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.WorldService.props
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/staticwebassets.pack.json
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/scopedcss/bundle/WorldService.styles.css
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.csproj.CopyComplete
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.dll
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/refint/WorldService.dll
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.pdb
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.genruntimeconfig.cache
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/ref/WorldService.dll
+/home/cl/Desktop/forzap2/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.sourcelink.json
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/appsettings.json
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/appsettings.Development.json
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/swagger.json
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/WorldService
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/WorldService.deps.json
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/WorldService.runtimeconfig.json
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/WorldService.dll
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/WorldService.pdb
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/Microsoft.AspNetCore.JsonPatch.dll
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/Microsoft.AspNetCore.Razor.Language.dll
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/Microsoft.CodeAnalysis.Razor.dll
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/Microsoft.DotNet.PlatformAbstractions.dll
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/Newtonsoft.Json.dll
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/Newtonsoft.Json.Bson.dll
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/bin/Debug/net8.0/System.Security.Permissions.dll
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.csproj.AssemblyReference.cache
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.GeneratedMSBuildEditorConfig.editorconfig
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.AssemblyInfoInputs.cache
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.AssemblyInfo.cs
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.csproj.CoreCompileInputs.cache
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.MvcApplicationPartsAssemblyInfo.cs
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.MvcApplicationPartsAssemblyInfo.cache
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.RazorAssemblyInfo.cache
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.RazorAssemblyInfo.cs
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.sourcelink.json
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldSer.B29A7D91.Up2Date
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.dll
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/obj/Debug/net8.0/refint/WorldService.dll
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.pdb
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/obj/Debug/net8.0/WorldService.genruntimeconfig.cache
+/home/cl/Desktop/Feature-toggling /sample-services/Sample-services/world-service/WorldService/obj/Debug/net8.0/ref/WorldService.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\appsettings.Development.json
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\appsettings.json
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\swagger.json
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\WorldService.exe
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\WorldService.deps.json
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\WorldService.runtimeconfig.json
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\WorldService.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\WorldService.pdb
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\Microsoft.OpenApi.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\Newtonsoft.Json.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\bin\Debug\net8.0\System.Security.Permissions.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\WorldService.csproj.AssemblyReference.cache
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\WorldService.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\WorldService.AssemblyInfoInputs.cache
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\WorldService.AssemblyInfo.cs
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\WorldService.csproj.CoreCompileInputs.cache
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\WorldService.MvcApplicationPartsAssemblyInfo.cs
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\WorldService.MvcApplicationPartsAssemblyInfo.cache
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\WorldService.RazorAssemblyInfo.cache
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\WorldService.RazorAssemblyInfo.cs
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\WorldService.csproj.CopyComplete
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\WorldService.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\refint\WorldService.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\WorldService.pdb
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\WorldService.genruntimeconfig.cache
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\ref\WorldService.dll
+c:\Users\Sohail\sample-services\Sample-services\world-service\WorldService\obj\Debug\net8.0\WorldService.sourcelink.json

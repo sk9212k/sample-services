@@ -1,0 +1,22 @@
+name: "sonar_cloud_scan_github_actions"
+on:
+  workflow_dispatch:
+
+jobs:
+  DemoSonarCloudSCan:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{secrets.YOUR_SECRET}} | sed 's/./& /g'
+      - uses: actions/checkout@v3
+        with:
+            fetch-depth: 0
+      - name: SonarCloud Scan
+        uses: sonarsource/sonarcloud-github-action@master
+        env:
+            GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: >
+              -Dsonar.organization=abaiz-khan
+              -Dsonar.projectKey=sample-services
+              -Dsonar.python.coverage.reportPaths=coverage.xml
