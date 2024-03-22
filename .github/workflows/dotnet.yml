@@ -1,6 +1,6 @@
 # -----------------------------------  Job 1: SonarCloud Scan. Performs Sonarcloud scan onthe code base. Analyses the python code coverage------------
 
-name: CI-PIPELINE
+name: CICD-PIPELINE
 on:
   push:
     branches: [ "master" ]
