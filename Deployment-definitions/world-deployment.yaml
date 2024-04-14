@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: world-service
-          image: zirconblueacr/world-service:latest
+          image: zirconblueacr.azurecr.io/hello-service:latest
           ports:
             - containerPort: 8080
           #  env:                        # Add this section for environment variables
