@@ -6,6 +6,7 @@ on:
     branches: [ "testing" ]
   pull_request:
     branches: [ "testing" ]
+  workflow_dispatch:  
 jobs:
   SonarCloudSCan:
     runs-on: ubuntu-latest
