@@ -19,7 +19,7 @@ spec:
             - containerPort: 8080
       #     env:                        # Add this section for environment variables
       #       - name: ASPNETCORE_ENVIRONMENT
-     #          value: Development      # Set the value to "Development"
+     #          value:       # Set the value to "Development"
 ---
 apiVersion: v1
 kind: Service
