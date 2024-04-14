@@ -177,15 +177,15 @@ jobs:
         - name: az login
           uses: azure/docker-login@v1
           with:
-            login-server: deploymentdemo.azurecr.io
+            login-server: debugimages.azurecr.io
             username: ${{ secrets.REGISTRY_USERNAME }}
             password: ${{ secrets.REGISTRY_PASSWORD }}
         - name: Docker build and push
           run: |
             cd Sample-services/hello-service/HelloService
             docker build . -t hello-service
-            docker tag hello-service:latest deploymentdemo.azurecr.io/hello-service:latest
-            docker push deploymentdemo.azurecr.io/hello-service:latest
+            docker tag hello-service:latest debugimages.azurecr.io/hello-service:latest
+            docker push debugimages.azurecr.io/hello-service:latest
 ######################### Job 6: Builds Docker image for WorldService and pushes it to Azure Container Registry #######################
   Pushingimages-WorldService:
      runs-on: ubuntu-22.04
@@ -196,15 +196,15 @@ jobs:
         - name: az login
           uses: azure/docker-login@v1
           with:
-            login-server: deploymentdemo.azurecr.io
+            login-server: debugimages.azurecr.io
             username: ${{ secrets.REGISTRY_USERNAME }}
             password: ${{ secrets.REGISTRY_PASSWORD }}
         - name: Docker build and push
           run: |
             cd Sample-services/world-service/WorldService
             docker build . -t world-service
-            docker tag world-service:latest deploymentdemo.azurecr.io/world-service:latest
-            docker push deploymentdemo.azurecr.io/world-service:latest
+            docker tag world-service:latest debugimages.azurecr.io/world-service:latest
+            docker push debugimages.azurecr.io/world-service:latest
 ############################# Job 7: Deployment to production environment - Deploys services to Kubernetes cluster based on feature toggle settings. #########################################################
   Navigate_to_Deployment_definitions_and_deploy:
     runs-on: ubuntu-latest
