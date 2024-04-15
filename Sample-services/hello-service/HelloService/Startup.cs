@@ -6,7 +6,7 @@ public class Startup
 {
     public void ConfigureServices(IServiceCollection services)
     {
-        // Configure services for dependency injection hereee
+        // Configure services for dependency injection hereeee
         services.AddControllers();
 
         // Add Swagger/OpenAPI generation
